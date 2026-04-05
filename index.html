@@ -1,203 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavin Anandh</title>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kavin Anandh</title>
-  <style>
-    ::-webkit-scrollbar {
-      display: none;
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: serif;
+        text-decoration: none;
+        line-height: 1.5;
+      }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: serif;
-      text-decoration: none;
-      line-height: 1.5;
-    }
+      a,
+      a:visited {
+        color: rgb(50, 75, 200);
+        transition: all 0.2s;
+      }
 
-    a,
-    a:visited {
-      color: rgb(50, 75, 200);
-      transition: all 0.2s;
-    }
+      a:hover {
+        color: rgb(80, 120, 255);
+      }
 
-    a:hover {
-      color: rgb(80, 120, 255);
-    }
+      body {
+        color: rgb(25, 25, 25);
+        background-color: rgb(240, 240, 240);
+        margin: 0 1rem;
+      }
 
-    body {
-      color: rgb(25, 25, 25);
-      background-color: rgb(240, 240, 240);
-      margin: 0 1rem;
-    }
+      .container {
+        padding: 2rem 0 2rem;
+        max-width: 640px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
 
-    .container {
-      padding: 2rem 0 2rem;
-      max-width: 640px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
 
-    nav {
-      display: flex;
-      justify-content: space-around;
-    }
+      h1,
+      h2,
+      h4 {
+        font-weight: 500;
+      }
 
-    h1,
-    h2,
-    h4 {
-      font-weight: 500;
-    }
+      .title {
+        margin-bottom: 0.5rem;
+      }
 
-    .title {
-      margin-bottom: 0.5rem;
-    }
+      .content {
+        margin-top: 0.5rem;
+        hyphens: none;
+      }
 
-    .content {
-      margin-top: 0.5rem;
-      hyphens: none;
-    }
+      .contact {
+        margin-top: 1rem;
+      }
 
-    .contact {
-      margin-top: 1rem;
-    }
+      .lead {
+        font-weight: bold;
+      }
 
-    .lead {
-      font-weight: bold;
-    }
+      .tech-stack-element,
+      .project-element,
+      .edu-element {
+        border: 1px solid rgb(200, 200, 200);
+        margin: 12px 0 8px;
+        padding: 12px;
+      }
 
-    .tech-stack-element,
-    .project-element,
-    .edu-element {
-      border: 1px solid rgb(200, 200, 200);
-      margin: 12px 0 8px;
-      padding: 12px;
-    }
+      .project-element,
+      .edu-element {
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
 
-    .project-element,
-    .edu-element {
-      padding: 1.5rem 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
+      .project-title,
+      .edu-title {
+        font-weight: 600;
+        font-size: large;
+      }
 
-    .project-title,
-    .edu-title {
-      font-weight: 600;
-      font-size: large;
-    }
+      .project-stack {
+        font-style: italic;
+        color: rgb(100, 100, 100);
+      }
+    </style>
+  </head>
 
-    .project-stack {
-      font-style: italic;
-      color: rgb(100, 100, 100);
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <h1 class="title" style="margin-bottom: 1.25rem;">
-        Hello, I am Kavin.
-      </h1>
-      <div class="content">
-        I&#8217;m a web developer who loves building clean, simple, and beautiful user interfaces. I&#8217;ve got
-        some experience creating scalable and efficient applications, especially on the back end. I enjoy working with
-        modern web technologies, and I&#8217;m learning to write robust code and solve tricky problems using data
-        structures and algorithms.
-        <div class="contact">
-          <a href="mailto:kavin.anandh@proton.me">email</a> &#183;
-          <a href="https://www.github.com/kdx-08/" target="_blank">github</a> &#183;
-          <a href="https://linkedin.com/in/kavin-anandh/" target="_blank">linkedin</a> &#183;
-          <a href="tel:7305015883">phone</a>
-        </div>
-      </div>
-    </header>
-
-    <article id="education">
-      <h2 class="title">Education</h2>
-      <hr>
-      <div class="content">
-        <div class="edu-element">
-          <h4 class="edu-title">Vellore Institute of Technology, Chennai (2023 - 2027)</h4>
-          <div class="edu-description">
-            <p>B.Tech Electronics and Computer Engineering</p>
-            <p><strong>CGPA:</strong> 8.92</p>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title" style="margin-bottom: 1.25rem">Hello, I am Kavin.</h1>
+        <div class="content">
+          I&#8217;m a web developer who loves building clean, simple, and beautiful user interfaces. I&#8217;ve got some
+          experience creating scalable and efficient applications, especially on the back end. I enjoy working with
+          modern web technologies, and I&#8217;m learning to write robust code and solve tricky problems using data
+          structures and algorithms.
+          <div class="contact">
+            <a href="mailto:kavin.anandh@proton.me">email</a> &#183;
+            <a href="https://www.github.com/kdx-08/" target="_blank">github</a> &#183;
+            <a href="https://linkedin.com/in/kavin-anandh/" target="_blank">linkedin</a> &#183;
+            <a href="tel:7305015883">phone</a>
           </div>
         </div>
-        <div class="edu-element">
-          <h4 class="edu-title">Devi Academy Senior Secondary School</h4>
-          <div class="edu-description">
-            <p>Class 12th CBSE (2022 - 2023)</p>
-            <p><strong>Score:</strong> 88.8%</p>
+      </header>
+
+      <article id="education">
+        <h2 class="title">Education</h2>
+        <hr />
+        <div class="content">
+          <div class="edu-element">
+            <h4 class="edu-title">Vellore Institute of Technology, Chennai (2023 - 2027)</h4>
+            <div class="edu-description">
+              <p>B.Tech Electronics and Computer Engineering</p>
+              <p><strong>CGPA:</strong> 8.92</p>
+            </div>
+          </div>
+          <div class="edu-element">
+            <h4 class="edu-title">Devi Academy Senior Secondary School</h4>
+            <div class="edu-description">
+              <p>Class 12th CBSE (2022 - 2023)</p>
+              <p><strong>Score:</strong> 88.8%</p>
+            </div>
+          </div>
+          <div class="edu-element">
+            <h4 class="edu-title">Devi Academy Senior Secondary School</h4>
+            <div class="edu-description">
+              <p>Class 10th CBSE (2020 - 2021)</p>
+              <p><strong>Score:</strong> 95.6%</p>
+            </div>
           </div>
         </div>
-        <div class="edu-element">
-          <h4 class="edu-title">Devi Academy Senior Secondary School</h4>
-          <div class="edu-description">
-            <p>Class 10th CBSE (2020 - 2021)</p>
-            <p><strong>Score:</strong> 95.6%</p>
+      </article>
+
+      <article>
+        <h2 class="title">Tech Stack</h2>
+        <hr />
+        <div class="content">
+          <div class="tech-stack-element"><span class="lead">Languages: </span>JavaScript, Python, C, C++, Java</div>
+          <div class="tech-stack-element"><span class="lead">Frameworks: </span>Express.js, React.js</div>
+          <div class="tech-stack-element"><span class="lead">Databases: </span>MySQL, PostgreSQL, MongoDB</div>
+          <div class="tech-stack-element">
+            <span class="lead">Dev Tools: </span>Visual Studio Code, Postman, Git, GitHub
           </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article>
-      <h2 class="title">Tech Stack</h2>
-      <hr>
-      <div class="content">
-        <div class="tech-stack-element"><span class="lead">Languages: </span>JavaScript, Python, C, C++, Java</div>
-        <div class="tech-stack-element"><span class="lead">Frameworks: </span>Express.js, React.js</div>
-        <div class="tech-stack-element"><span class="lead">Databases: </span>MySQL, PostgreSQL, MongoDB</div>
-        <div class="tech-stack-element"><span class="lead">Dev Tools: </span>Visual Studio Code, Postman, Git, GitHub
-        </div>
-      </div>
-    </article>
-
-    <article id="projects">
-      <h2 class="title">Projects</h2>
-      <hr>
-      <div class="content">
-        <div class="project-element">
-          <h4 class="project-title">VIT FFCS Planner</h4>
-          <div class="project-description">The VIT FFCS Timetable Planner is an user-friendly tool designed to help VIT
-            students organize their course schedules efficiently. It allows users to select their desired courses and
-            instantly see how their weekly timetable shapes up. The planner highlights any timing conflicts, making it
-            easier to adjust and finalize selections. With a clean and intuitive interface, students can manage their
-            courses without hassle and even save or load timetable drafts as needed.</div>
-          <div class="project-stack">HTML, CSS, JavaScript, React.js</div>
-        </div>
-        <div class="project-element">
-          <h4 class="project-title">Theatrix - Theatre Management System</h4>
-          <div class="project-description">A theatre management system application built with Express.js and Supabase,
-            designed for managing movies and shows. Data is stored securely in the cloud using Supabase. This project
-            features CRUD operations (Create, Read, Update, Delete) for movies and shows, accessed via a custom API.
+      <article id="projects">
+        <h2 class="title">Projects</h2>
+        <hr />
+        <div class="content">
+          <div class="project-element">
+            <div class="project-element">
+              <h4 class="project-title">Scrappy - A pastebin alternative</h4>
+              <div class="project-description">
+                A clean and simple pastebin-style app for creating and sharing text or code snippets. It lets you use
+                custom, readable URLs (or auto-generated ones), protect scraps with optional passwords, and set them to
+                automatically expire after predefined time periods.
+              </div>
+              <div class="project-stack">HTML, CSS, JavaScript, React, Node.js, Express.js, NeonDB</div>
+            </div>
+            <h4 class="project-title">VIT FFCS Planner</h4>
+            <div class="project-description">
+              The VIT FFCS Timetable Planner is an user-friendly tool designed to help VIT students organize their
+              course schedules efficiently. It allows users to select their desired courses and instantly see how their
+              weekly timetable shapes up. The planner highlights any timing conflicts, making it easier to adjust and
+              finalize selections. With a clean and intuitive interface, students can manage their courses without
+              hassle and even save or load timetable drafts as needed.
+            </div>
+            <div class="project-stack">HTML, CSS, JavaScript, React.js</div>
           </div>
-          <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, Supabase</div>
+          <div class="project-element">
+            <h4 class="project-title">Theatrix - Theatre Management System</h4>
+            <div class="project-description">
+              A theatre management system application built with Express.js and Supabase, designed for managing movies
+              and shows. Data is stored securely in the cloud using Supabase. This project features CRUD operations
+              (Create, Read, Update, Delete) for movies and shows, accessed via a custom API.
+            </div>
+            <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, Supabase</div>
+          </div>
         </div>
-        <div class="project-element">
-          <h4 class="project-title">Taskly - To Do List Application</h4>
-          <div class="project-description">A minimalist to-do application with cloud sync capabilities that is supported
-            across web and Android. It provides user authentication and basic task management CRUD features. An android
-            application developed using Apache Cordova.</div>
-          <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</div>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article id="bye">
-      <h2 class="title">Bye</h2>
-      <hr>
-      <div class="content">Thanks for scrolling.</div>
-    </article>
-  </div>
-</body>
-
+      <article id="bye">
+        <h2 class="title">Bye</h2>
+        <hr />
+        <div class="content">Thanks for scrolling.</div>
+      </article>
+    </div>
+  </body>
 </html>
